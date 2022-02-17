@@ -3,12 +3,6 @@
     "authenticationMethod": "route",
     "routes": [
         {
-            "source": "/index.html",
-            "target": "/index.html",
-            "authenticationType": "xsuaa",
-            "csrfProtection": false
-        },
-        {
             "source": "^/sap/(.*)$",
             "target": "/sap/$1",
             "destination": "FID",
