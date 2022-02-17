@@ -1,0 +1,19 @@
+<mvc:View controllerName="projectdemo.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Shell id="shell">
+        <App id="app" backgroundColor="White">
+            <pages>
+                <Page id="page" title="{i18n>title}" showHeader="false">
+                    <content>
+                        <FlexBox id="box" height="100px" alignItems="Center" justifyContent="Center" renderType="Bare">
+                            <items>
+                                <Text id="t1" text="✨" />	
+                                <ObjectStatus id="t2" inverted="true" text="{main>EUserId}" binding="{main>/UserDetailSet('')}" state="Success" class="sapUiSmallMarginEnd sapUiSmallMarginBegin"/>
+                                <Text id="t3" text="✨" />	
+                            </items>
+                        </FlexBox>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
