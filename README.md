@@ -19,7 +19,7 @@
 
 ## projectdemo
 
-A Fiori application.
+A Demo Fiori application.
 
 ### Starting the generated app
 
