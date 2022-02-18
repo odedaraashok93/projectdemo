@@ -7,7 +7,8 @@
             "target": "/sap/$1",
             "destination": "FID",
             "authenticationType": "xsuaa",
-            "csrfProtection": false
+            "csrfProtection": false,
+            "scope": "$XSAPPNAME.adminuser"
         },
         {
             "source": "^/resources/(.*)$",

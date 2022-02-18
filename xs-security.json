@@ -6,6 +6,10 @@
         {
             "name": "$XSAPPNAME.appuser",
             "description": "User Scope"
+        },
+        {
+            "name": "$XSAPPNAME.adminuser",
+            "description": "Admin Scope"
         }
     ],
     "role-templates": [
@@ -14,6 +18,14 @@
             "description": "Application user",
             "scope-references": [
                 "$XSAPPNAME.appuser"
+            ]
+        },
+        {
+            "name": "adminuser",
+            "description": "Admin user",
+            "scope-references": [
+                "$XSAPPNAME.appuser",
+                "$XSAPPNAME.adminuser"
             ]
         }
     ]
