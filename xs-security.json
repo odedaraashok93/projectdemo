@@ -4,16 +4,16 @@
     "description": "Security profile of called application",
     "scopes": [
         {
-            "name": "$XSAPPNAME.User",
+            "name": "$XSAPPNAME.appuser",
             "description": "User Scope"
         }
     ],
     "role-templates": [
         {
-            "name": "AppUser",
+            "name": "appuser",
             "description": "Application user",
             "scope-references": [
-                "uaa.user"
+                "$XSAPPNAME.appuser"
             ]
         }
     ]
