@@ -1,31 +1,20 @@
 {
-  "xsappname": "projectdemo",
-  "tenant-mode": "dedicated",
-  "description": "Security profile of called application",
-  "scopes": [
-    {
-      "name": "uaa.user",
-      "description": "UAA"
-    },
-    {
-        "name": "$XSAPPNAME.User",
-        "description": "User Scope"
-      }
-  ],
-  "role-templates": [
-    {
-      "name": "Token_Exchange",
-      "description": "UAA",
-      "scope-references": [
-        "uaa.user"
-      ]
-    },
-    {
-        "name": "AppUser",
-        "description": "Application user",
-        "scope-references": [
-          "uaa.user"
-        ]
-    }
-  ]
+    "xsappname": "projectdemo",
+    "tenant-mode": "dedicated",
+    "description": "Security profile of called application",
+    "scopes": [
+        {
+            "name": "$XSAPPNAME.User",
+            "description": "User Scope"
+        }
+    ],
+    "role-templates": [
+        {
+            "name": "AppUser",
+            "description": "Application user",
+            "scope-references": [
+                "uaa.user"
+            ]
+        }
+    ]
 }
